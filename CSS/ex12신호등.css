@@ -1,0 +1,28 @@
+#black {
+    width: 120px;
+    height: 360px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#red,#yellow,#green {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+    margin-top: 15px;
+}
+
+#green {
+    background-color: green;
+    margin-top: 15px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:500px;
+        }
+        /* 
+        box-sizing 요소의 크기를 표시하는 방식
+
+        1) content-box
+        크기의 기준 = content
+        전체 크기가 커지는 것 상관 x
+        content만 유지
+
+
+        2) border-box
+        크기의 기준 = border 안쪽
+        (border+padding+content)
+        content의 크기가 작아지더라도
+        전체 크기를 맞추겠다.
+        */
+
+
+        .cb{
+            border:20px dotted pink;
+            box-sizing : content-box;
+        }
+
+        .bb{
+            border:20px solid lightgray;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.cb>p -->
+    <div class="cb">
+        <p>content</p>
+    </div>
+    <!--div.bb>p -->
+    <div class="bb">
+        <p>border-box</p>
+    </div>
+</body>
+</html>

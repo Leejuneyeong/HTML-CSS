@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 계층선택자를 이용해서 해당 결과에 스타일을 입혀라! */
+        /* 1. div를 기준으로 자손선택자인 span태그의 글자 색을 tomato로 */
+        div span{
+            color : tomato;
+        }
+        /* 2. div를 기준으로 자손선택자인 li태그의 글자 색을 cornflowerblue로 */
+        div li {
+            color : cornflowerblue;
+        }
+        /* 3. ol을 기준으로 자식선택자인 span태그의 글자 색을 aquamarine으로 */
+        ol > span {
+            color : aquamarine;
+        }
+        /* 4. li태그를 기준으로 근접후행 선택자인 li태그의 글자색을 red로 */
+        li+li {
+            color : red;
+        }
+        /* 5. li태그를 기준으로 후행 선택자인 li태그의 글자색을 yellow로 */
+        li~li {
+            color : yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <strong>연수생 수칙</strong>
+        <ol>
+            <li>지각하지 않기</li>
+            <li>결석하지 않기</li>
+            <span>(불가피할 땐 꼭 담당연구원에게 미리 말하기)</span>
+            <li>복습하기</li>
+        </ol>
+    </div>
+</body>
+</html>
